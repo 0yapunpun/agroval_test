@@ -206,6 +206,11 @@ function Body() {
       countryFilterList: arrayOperation[2],
       selectedCountryList: [],
     });
+
+    let checkboxes = document.querySelectorAll('.checkboxFilterCountry');
+    for (let i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = false;
+    }
   };
 
   let showComparedItems = () => {
